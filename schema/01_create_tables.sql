@@ -1,0 +1,2 @@
+-- Restaurant Database
+-- Database schema and table creation
