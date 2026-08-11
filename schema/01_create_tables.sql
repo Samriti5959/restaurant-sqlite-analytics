@@ -10,3 +10,9 @@ Create Table  Customers (
   city TEXT, 
   craeted_at DATE Default  Current_Date 
 );
+
+---Categories Table 
+Create Table Categories (
+  category_id Integer Primary Key AUTOINCREMENT,
+  category_name TEXT UNIQUE NOT NULL
+  );
