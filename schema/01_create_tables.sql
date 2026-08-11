@@ -24,5 +24,5 @@ item_name Text NOT NULL ,
 category_id Integer NOT NULL,
 price  value NOT NULL
 is_available Integer DEFAULT 1
-category_id ko Categories table ke category_id se link karna hai
+FOREIGN KEY (category_id) REFERENCES Categories(category_id)
 
