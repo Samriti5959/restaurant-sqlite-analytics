@@ -18,11 +18,12 @@ Create Table Categories (
   );
 
 ---Menu Items 
-Create Table MenuItems (
-item_id Integer Primary Key Auto Increment ,
-item_name Text NOT NULL ,
-category_id Integer NOT NULL,
-price  value NOT NULL
-is_available Integer DEFAULT 1
-FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+CREATE TABLE MenuItems (
+    item_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    item_name TEXT NOT NULL,
+    category_id INTEGER NOT NULL,
+    price REAL NOT NULL,
+    is_available INTEGER DEFAULT 1,
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+);
 
